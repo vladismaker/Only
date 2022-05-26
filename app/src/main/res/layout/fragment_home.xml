@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <ImageButton
+                android:id="@+id/idSearch"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="left|center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_search"
+                android:backgroundTint="@color/main"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Only"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                />
+<!--            android:background="@drawable/ic_search"-->
+            <ImageButton
+                android:id="@+id/idShoppingBag"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right|center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_shopping_bag"
+                android:backgroundTint="@color/main"
+                />
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Распродажа | Скидки до 50%"
+                android:textSize="17sp"
+                android:textColor="#FB7F7F"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#DFDFDF"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sale50"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Распродажа: cкидки до 50%"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Лучший бренд - теперь со скидкой"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начать шопинг"
+                android:layout_gravity="center"
+                android:layout_marginVertical="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Новинки"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginVertical="15dp"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/productsViewPagerNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Купить"
+                android:layout_gravity="center"
+                android:layout_marginVertical="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Главное за неделю"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginVertical="25dp"/>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/productsViewPagerMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

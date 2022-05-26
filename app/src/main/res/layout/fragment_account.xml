@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <ImageButton
+                android:id="@+id/idSearch"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="left|center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_search"
+                android:backgroundTint="@color/main"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Мой аккаунт"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <!--            android:background="@drawable/ic_search"-->
+            <ImageButton
+                android:id="@+id/idShoppingBag"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right|center"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_shopping_bag"
+                android:backgroundTint="@color/main"
+                />
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</LinearLayout>
